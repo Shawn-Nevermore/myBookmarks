@@ -1,3 +1,5 @@
+// 1.初始化数据
+
 var keys = [
     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
     ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'],
@@ -27,6 +29,8 @@ if (hashInLocalStorage) {
     hash = hashInLocalStorage
 }
 
+
+// 2.生成键盘
 // 遍历keys，生成kbd标签
 for (var i = 0; i < keys.length; i++) {
     var div = document.createElement('div')
@@ -57,6 +61,8 @@ for (var i = 0; i < keys.length; i++) {
     }
 }
 
+
+// 3.监听键盘
 document.onkeypress = function(onkeypressEvent) {
     var key = onkeypressEvent.key
     var website = hash[key]

@@ -10,15 +10,20 @@ a {
 
 body {
     background-color: #dfdfdf;
+    background-image: url(./img/blue.jpg);
+    background-size: cover;
 }
 
 main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 main .keyboard-wrapper {
     display: inline-block;
-    margin-top: 200px;
 }
 
 main .keyboard-wrapper div kbd {
@@ -44,11 +49,11 @@ main .keyboard-wrapper div kbd:hover button {
 }
 
 main .keyboard-wrapper div:nth-child(2) {
-    margin-left: 2em;
+    margin-left: -20px;
 }
 
 main .keyboard-wrapper div:nth-child(3) {
-    margin-left: 4em;
+    margin-left: -100px;
 }
 
 main .keyboard-wrapper div kbd button {
