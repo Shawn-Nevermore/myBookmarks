@@ -9,16 +9,22 @@ a {
 }
 
 body {
-    background-color: #dfdfdf;
+    background: #97cbff url(./img/blue.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 main .keyboard-wrapper {
-    display: inline-block;
-    margin-top: 200px;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px 20px 20px 30px;
 }
 
 main .keyboard-wrapper div kbd {
@@ -39,21 +45,38 @@ main .keyboard-wrapper div kbd {
     cursor: pointer;
 }
 
-main .keyboard-wrapper div kbd:hover button {
-    display: inline-block;
-}
-
 main .keyboard-wrapper div:nth-child(2) {
-    margin-left: 2em;
+    margin-left: -20px;
 }
 
 main .keyboard-wrapper div:nth-child(3) {
-    margin-left: 4em;
+    margin-left: -100px;
 }
 
 main .keyboard-wrapper div kbd button {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 4px;
+    bottom: 4px;
     display: none;
+}
+
+main .keyboard-wrapper div kbd:hover button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 20px;
+    height: 20px;
+    font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #dbdbdba2;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+main .keyboard-wrapper div kbd img {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    height: 20px;
+    width: 20px;
 }
