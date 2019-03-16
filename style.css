@@ -9,7 +9,12 @@ a {
 }
 
 body {
+<<<<<<< HEAD
     background: #97cbff url(./img/blue.jpg) no-repeat center center;
+=======
+    background-color: #dfdfdf;
+    background-image: url(./img/blue.jpg);
+>>>>>>> 61b6a6d6001385631a278c3db39f8c81a6f43665
     background-size: cover;
 }
 
@@ -22,9 +27,13 @@ main {
 }
 
 main .keyboard-wrapper {
+<<<<<<< HEAD
     background: rgb(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 30px 20px 20px 30px;
+=======
+    display: inline-block;
+>>>>>>> 61b6a6d6001385631a278c3db39f8c81a6f43665
 }
 
 main .keyboard-wrapper div kbd {
